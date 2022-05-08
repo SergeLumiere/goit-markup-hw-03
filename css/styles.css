@@ -1,0 +1,244 @@
+:root {
+  /* Основные шрифты */
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+
+  /* Цвет текста */
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --light-text-color: #ffffff;
+  --accent-text-color: #2196f3;
+  --footer-address-txt: rgba(255, 255, 255, 0.6);
+
+  /* Цвет текста для лого */
+  --logo-header-txt: #000000;
+  --logo-footer-txt: #ffffff;
+  --logo-accent-txt: #2196f3;
+
+  /* Цвет фона */
+  --primary-light-bg: #ffffff;
+  --primary-dark-bg: #2f303a;
+  --secondary-dark-bg: #f5f4fa;
+
+  /* Цвет для кнопок */
+  --button-light-text: #ffffff;
+  --button-dark-text: #212121;
+  --hero-button-main-bg: #2196f3;
+  --hero-button-hover-bg: #188ce8;
+  --portfolio-main-bg: #f5f4fa;
+  --portfolio-hover-bg: #2196f3;
+}
+
+/* Глобальные стили */
+body {
+  font-family: var(--main-font);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  background-color: var(--primary-light-bg);
+  color: var(--primary-text-color);
+}
+
+/* Классы для сброса стилей */
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* Классы для повторяющихся элементов */
+
+/* Лого */
+.logo {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+.logo-accent {
+  color: var(--logo-accent-txt);
+}
+
+/* Секции */
+.section-txt {
+  color: var(--secondary-text-color);
+}
+
+/* Заголовки */
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+/* Кнопки */
+.btn {
+  cursor: pointer;
+}
+/* Секция Верхняя линия (хедер) */
+.header {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+/* Хедер - лого */
+.header .logo {
+  color: var(--logo-header-txt);
+}
+/* Хедер - навигация */
+.nav-link {
+  color: var(--primary-text-color);
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-text-color);
+}
+.nav-link.current {
+  color: var(--accent-text-color);
+}
+/* Хедер - контакты */
+.header-contacts-link {
+  color: var(--secondary-text-color);
+}
+.header-contacts-link:hover,
+.header-contacts-link:focus {
+  color: var(--accent-text-color);
+}
+
+/* Секция Подвал (футер) */
+.footer {
+  background-color: var(--primary-dark-bg);
+}
+/* Лого */
+.footer .logo {
+  color: var(--logo-footer-txt);
+}
+/* Адрес */
+.footer-address-list {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.footer-map-link {
+  color: var(--light-text-color);
+}
+.footer-contacts-link {
+  color: var(--footer-address-txt);
+}
+.footer-map-link:hover,
+.footer-map-link:focus,
+.footer-contacts-link:hover,
+.footer-contacts-link:focus {
+  color: var(--accent-text-color);
+}
+
+/* Стили для страницы Студия (index.html) */
+
+/* Секция Шапка (герой) */
+.hero {
+  background-color: var(--primary-dark-bg);
+}
+.hero-title {
+  color: var(--light-text-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.hero-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: var(--button-light-text);
+  background-color: var(--hero-button-main-bg);
+}
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--hero-button-hover-bg);
+}
+
+/* Секция Особенности */
+.features .subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.features .section-txt {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* Секция Наша команда */
+.team {
+  background-color: var(--secondary-dark-bg);
+}
+.team-list {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.team .subtitle {
+  font-weight: 500;
+}
+
+/* Стили для страницы Портфолио (portfolio.html) */
+
+/* Секция Портфолио */
+
+/* Фильтры */
+.filters-btn {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  color: var(--button-dark-text);
+  background-color: var(--portfolio-main-bg);
+}
+.filters-btn:hover,
+.filters-btn:focus {
+  color: var(--button-light-text);
+  background-color: var(--portfolio-hover-bg);
+}
+
+/* Проекты */
+.projects-list .subtitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.projects-list .section-txt {
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+}
