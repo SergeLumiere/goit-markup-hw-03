@@ -1,0 +1,209 @@
+/* *************** PROJECT COLORS *************** */
+/* IRIS color: CTAs, Focused, Active states, Links: 
+	#4d5ae5
+	
+	NAVY BLUE color: Overlays, Shadows, Headings: 
+	#2e2f42
+
+	GREEN color: Valid fields, Success messages:
+	#31d0aa
+
+	SLATE color: Body text: 
+	#434455
+
+	LIGHT SLATE color: Helper text, Deemphasized text:
+	#8e8f99
+
+	CORNFLOWER color: Accent color, Hairlines, Subtle backgrounds:
+	#e7e9fc
+
+	CLOUD color: Light mode backgrounds, Light mode Dialogs/alerts:
+	#f4f4fd
+
+	WHITE TEXT color: Hero title, Colored buttons:
+	#ffffff 
+	
+	HERO BUTTON HOVER background color: 
+	#404BBF
+	*/
+
+:root {
+	/* ================= COLORS ================= */
+	/* TEXT COLORS */
+	--primary-text-color: #434455;
+	--secondary-text-color: #2e2f42;
+
+	--primary-light-text-color: #e7e9fc;
+	--secondary-light-text-color: #f4f4fd;
+
+	/* BACKGROUNDS COLORS */
+	--primary-background-color: #ffffff;
+	--secondary-background-color: #f4f4fd;
+	--primary-dark-background-color: #2e2f42;
+
+	/* OTHER COLORS */
+	--primary-accent-color: #4d5ae5;
+	--secondary-accent-color: #404bbf;
+	--white-color: #ffffff;
+
+	/* ================= FONTS ================= */
+	--main-font: "Roboto", sans-serif;
+	--secondary-font: "Raleway", sans-serif;
+}
+
+body {
+	font-family: var(--main-font);
+	font-size: 16px;
+	letter-spacing: 0.02em;
+	color: var(--primary-text-color);
+
+	background-color: var(--primary-background-color);
+}
+
+/* ================= STYLES OVERRIDE AND HIDE ================= */
+.list {
+	list-style: none;
+}
+.link {
+	text-decoration: none;
+}
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+/* ================= COMPONENTS ================= */
+.logo {
+	font-family: var(--secondary-font);
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 1.33;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+}
+.logo-accent {
+	color: var(--primary-accent-color);
+}
+.section-title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.11;
+	letter-spacing: 0.02em;
+	text-transform: capitalize;
+
+	color: var(--secondary-text-color);
+}
+.subtitle {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+
+	color: var(--secondary-text-color);
+}
+.section-txt {
+	line-height: 1.5;
+}
+.btn {
+	cursor: pointer;
+}
+
+/* ================= HEADER ================= */
+.header .logo {
+	color: var(--secondary-text-color);
+}
+.nav-item-link {
+	font-weight: 700;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	color: var(--secondary-text-color);
+}
+.nav-item-link:hover,
+.nav-item-link:focus {
+	color: var(--primary-accent-color);
+}
+.current {
+	color: var(--primary-accent-color);
+}
+.header-contacts-link {
+	line-height: 1.5;
+	color: var(--primary-text-color);
+}
+.header-contacts-link:hover,
+.header-contacts-link:focus {
+	color: var(--primary-accent-color);
+}
+
+/* ================= FOOTER ================= */
+.footer {
+	background-color: var(--primary-dark-background-color);
+}
+.footer .logo {
+	color: var(--secondary-light-text-color);
+}
+.footer-text {
+	line-height: 1.5;
+	color: var(--primary-light-text-color);
+}
+
+/* ================= STUDIO.HTML ================= */
+/* SECTION HERO */
+.hero {
+	background-color: var(--primary-dark-background-color);
+}
+.hero-title {
+	font-weight: 700;
+	font-size: 56px;
+	line-height: 1.07;
+	letter-spacing: 0.02em;
+
+	color: var(--white-color);
+}
+.hero-button {
+	font-family: inherit;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.19;
+	letter-spacing: 0.04em;
+	color: var(--white-color);
+
+	background-color: var(--primary-accent-color);
+}
+.hero-button:hover,
+.hero-button:focus {
+	background-color: var(--secondary-accent-color);
+}
+/* SECTION OUR FEATURES */
+/* SECTION OUR WORKS */
+
+/* SECTION OUR TEAM */
+.team {
+	background-color: var(--secondary-background-color);
+}
+
+/* ================= PORTFOLIO.HTML ================= */
+.filters-btn {
+	font-family: inherit;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.04em;
+	color: var(--primary-accent-color);
+
+	background-color: var(--secondary-background-color);
+}
+.filters-btn:hover,
+.filters-btn:focus {
+	color: var(--white-color);
+
+	background-color: var(--primary-accent-color);
+}
